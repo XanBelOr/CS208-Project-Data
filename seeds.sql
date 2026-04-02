@@ -1,48 +1,59 @@
 -- Seed data for A.B.C. Music streaming service
 
-INSERT INTO artists (id, name)
+INSERT INTO genre (id, genre)
 VALUES
-    (1, 'Teddy Swims'),
-    (2, 'Shaboozey'),
-    (3, 'Benson Boone'),
-    (4, 'Post Malone'),
-    (5, 'Jack Harlow'),
-    (6, 'Kendrick Lamar'),
-    (7, 'Sabrina Carpenter'),
-    (8, 'Tommy Richman'),
-    (9, 'Hozier'),
-    (10, 'Noah Kahan'),
-    (11, 'Taylor Swift'),
-    (12, 'Tate McRae'),
-    (13, 'Billie Eilish'),
-    (14, 'Chappell Roan'),
-    (15, 'SZA'),
-    (16, 'Doja Cat'),
-    (17, 'Tyla'),
-    (18, 'Ariana Grande'),
-    (19, 'Zach Bryan'),
-    (20, 'Morgan Wallen');
+    (1, 'Pop'),
+    (2, 'Hip-Hop'),
+    (3, 'R&B'),
+    (4, 'Country'),
+    (5, 'Indie'),
+    (6, 'Folk'),
+    (7, 'Afrobeats');
 
 
-INSERT INTO tracks (id, title, artist_id, album, genre)
+INSERT INTO song (id, artist, album, songs)
 VALUES
-    (1, 'Lose Control', 1, 'I''ve Tried Everything But Therapy (Part 1)', 'R&B'),
-    (2, 'A Bar Song (Tipsy)', 2, 'Where I''ve Been, Isn''t Where I''m Going', 'Country'),
-    (3, 'Beautiful Things', 3, 'Fireworks & Rollerblades', 'Pop'),
-    (4, 'I Had Some Help', 4, 'F-1 Trillion', 'Country'),
-    (5, 'Lovin on Me', 5, NULL, 'Hip-Hop'),
-    (6, 'Not Like Us', 6, NULL, 'Hip-Hop'),
-    (7, 'Espresso', 7, 'Short n'' Sweet', 'Pop'),
-    (8, 'Million Dollar Baby', 8, NULL, 'R&B'),
-    (9, 'Too Sweet', 9, 'Unreal Unearth', 'Indie'),
-    (10, 'Stick Season', 10, 'Stick Season', 'Folk'),
-    (11, 'Cruel Summer', 11, 'Lover', 'Pop'),
-    (12, 'Greedy', 12, 'Think Later', 'Pop'),
-    (13, 'Birds of a Feather', 13, 'Hit Me Hard and Soft', 'Pop'),
-    (14, 'Good Luck, Babe!', 14, 'The Rise and Fall of a Midwest Princess', 'Pop'),
-    (15, 'Saturn', 15, 'SOS', 'R&B'),
-    (16, 'Agora Hills', 16, 'Scarlet', 'Hip-Hop'),
-    (17, 'Water', 17, 'Tyla', 'Afrobeats'),
-    (18, 'We Can''t Be Friends', 18, 'Eternal Sunshine', 'Pop'),
-    (19, 'I Remember Everything', 19, 'Zach Bryan', 'Country'),
-    (20, 'Last Night', 20, 'One Thing at a Time', 'Country');
+    (1, 'Teddy Swims', 'I''ve Tried Everything But Therapy (Part 1)', 'Lose Control'),
+    (2, 'Shaboozey', 'Where I''ve Been, Isn''t Where I''m Going', 'A Bar Song (Tipsy)'),
+    (3, 'Benson Boone', 'Fireworks & Rollerblades', 'Beautiful Things'),
+    (4, 'Post Malone', 'F-1 Trillion', 'I Had Some Help'),
+    (5, 'Jack Harlow', 'Single', 'Lovin on Me'),
+    (6, 'Kendrick Lamar', 'Single', 'Not Like Us'),
+    (7, 'Sabrina Carpenter', 'Short n'' Sweet', 'Espresso'),
+    (8, 'Tommy Richman', 'Single', 'Million Dollar Baby'),
+    (9, 'Hozier', 'Unreal Unearth', 'Too Sweet'),
+    (10, 'Noah Kahan', 'Stick Season', 'Stick Season'),
+    (11, 'Taylor Swift', 'Lover', 'Cruel Summer'),
+    (12, 'Tate McRae', 'Think Later', 'Greedy'),
+    (13, 'Billie Eilish', 'Hit Me Hard and Soft', 'Birds of a Feather'),
+    (14, 'Chappell Roan', 'The Rise and Fall of a Midwest Princess', 'Good Luck, Babe!'),
+    (15, 'SZA', 'SOS', 'Saturn'),
+    (16, 'Doja Cat', 'Scarlet', 'Agora Hills'),
+    (17, 'Tyla', 'Tyla', 'Water'),
+    (18, 'Ariana Grande', 'Eternal Sunshine', 'We Can''t Be Friends'),
+    (19, 'Zach Bryan', 'Zach Bryan', 'I Remember Everything'),
+    (20, 'Morgan Wallen', 'One Thing at a Time', 'Last Night');
+
+
+INSERT INTO registered_genre (song_id, genre_id)
+VALUES
+    (1, 3),
+    (2, 4),
+    (3, 1),
+    (4, 4),
+    (5, 2),
+    (6, 2),
+    (7, 1),
+    (8, 3),
+    (9, 5),
+    (10, 6),
+    (11, 1),
+    (12, 1),
+    (13, 1),
+    (14, 1),
+    (15, 3),
+    (16, 2),
+    (17, 7),
+    (18, 1),
+    (19, 4),
+    (20, 4);
