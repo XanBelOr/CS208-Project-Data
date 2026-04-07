@@ -1,59 +1,80 @@
 -- Seed data for A.B.C. Music streaming service
 
-INSERT INTO genre (id, genre)
+INSERT INTO artist (name)
 VALUES
-    (1, 'Pop'),
-    (2, 'Hip-Hop'),
-    (3, 'R&B'),
-    (4, 'Country'),
-    (5, 'Indie'),
-    (6, 'Folk'),
-    (7, 'Afrobeats');
+    ('Teddy Swims'),
+    ('Shaboozey'),
+    ('Benson Boone'),
+    ('Post Malone'),
+    ('Jack Harlow'),
+    ('Kendrick Lamar'),
+    ('Sabrina Carpenter'),
+    ('Tommy Richman'),
+    ('Hozier'),
+    ('Noah Kahan'),
+    ('Taylor Swift'),
+    ('Tate McRae'),
+    ('Billie Eilish'),
+    ('Chappell Roan'),
+    ('SZA'),
+    ('Doja Cat'),
+    ('Tyla'),
+    ('Ariana Grande'),
+    ('Zach Bryan'),
+    ('Morgan Wallen');
 
 
-INSERT INTO song (id, artist, album, songs)
+INSERT INTO album (title, year)
 VALUES
-    (1, 'Teddy Swims', 'I''ve Tried Everything But Therapy (Part 1)', 'Lose Control'),
-    (2, 'Shaboozey', 'Where I''ve Been, Isn''t Where I''m Going', 'A Bar Song (Tipsy)'),
-    (3, 'Benson Boone', 'Fireworks & Rollerblades', 'Beautiful Things'),
-    (4, 'Post Malone', 'F-1 Trillion', 'I Had Some Help'),
-    (5, 'Jack Harlow', 'Single', 'Lovin on Me'),
-    (6, 'Kendrick Lamar', 'Single', 'Not Like Us'),
-    (7, 'Sabrina Carpenter', 'Short n'' Sweet', 'Espresso'),
-    (8, 'Tommy Richman', 'Single', 'Million Dollar Baby'),
-    (9, 'Hozier', 'Unreal Unearth', 'Too Sweet'),
-    (10, 'Noah Kahan', 'Stick Season', 'Stick Season'),
-    (11, 'Taylor Swift', 'Lover', 'Cruel Summer'),
-    (12, 'Tate McRae', 'Think Later', 'Greedy'),
-    (13, 'Billie Eilish', 'Hit Me Hard and Soft', 'Birds of a Feather'),
-    (14, 'Chappell Roan', 'The Rise and Fall of a Midwest Princess', 'Good Luck, Babe!'),
-    (15, 'SZA', 'SOS', 'Saturn'),
-    (16, 'Doja Cat', 'Scarlet', 'Agora Hills'),
-    (17, 'Tyla', 'Tyla', 'Water'),
-    (18, 'Ariana Grande', 'Eternal Sunshine', 'We Can''t Be Friends'),
-    (19, 'Zach Bryan', 'Zach Bryan', 'I Remember Everything'),
-    (20, 'Morgan Wallen', 'One Thing at a Time', 'Last Night');
+    ('I''ve Tried Everything But Therapy (Part 1)', 2023),
+    ('Where I''ve Been, Isn''t Where I''m Going', 2024),
+    ('Fireworks & Rollerblades', 2024),
+    ('F-1 Trillion', 2024),
+    ('Short n'' Sweet', 2024),
+    ('Unreal Unearth', 2023),
+    ('Stick Season', 2022),
+    ('Lover', 2019),
+    ('Think Later', 2023),
+    ('Hit Me Hard and Soft', 2024),
+    ('The Rise and Fall of a Midwest Princess', 2023),
+    ('SOS', 2022),
+    ('Scarlet', 2023),
+    ('Tyla', 2024),
+    ('Eternal Sunshine', 2024),
+    ('Zach Bryan', 2023),
+    ('One Thing at a Time', 2023);
 
 
-INSERT INTO registered_genre (song_id, genre_id)
+INSERT INTO genre (genre)
 VALUES
-    (1, 3),
-    (2, 4),
-    (3, 1),
-    (4, 4),
-    (5, 2),
-    (6, 2),
-    (7, 1),
-    (8, 3),
-    (9, 5),
-    (10, 6),
-    (11, 1),
-    (12, 1),
-    (13, 1),
-    (14, 1),
-    (15, 3),
-    (16, 2),
-    (17, 7),
-    (18, 1),
-    (19, 4),
-    (20, 4);
+    ('Pop'),
+    ('Hip-Hop'),
+    ('R&B'),
+    ('Country'),
+    ('Indie'),
+    ('Folk'),
+    ('Afrobeats');
+
+
+INSERT INTO song (title, length)
+VALUES
+    ('Lose Control', 199),
+    ('A Bar Song (Tipsy)', 186),
+    ('Beautiful Things', 180),
+    ('I Had Some Help', 179),
+    ('Lovin on Me', 167),
+    ('Not Like Us', 274),
+    ('Espresso', 175),
+    ('Million Dollar Baby', 203),
+    ('Too Sweet', 277),
+    ('Stick Season', 195),
+    ('Cruel Summer', 178),
+    ('Greedy', 132),
+    ('Birds of a Feather', 210),
+    ('Good Luck, Babe!', 218),
+    ('Saturn', 216),
+    ('Agora Hills', 181),
+    ('Water', 194),
+    ('We Can''t Be Friends', 215),
+    ('I Remember Everything', 243),
+    ('Last Night', 163);
